@@ -15,7 +15,7 @@ int main()
     
     if (input_value(&x, &y, &z))
     {
-        printf("Err, maybe you input incorrect data!");
+        printf("Err, Maybe you input incorrect data!");
         return 1;
     }
     else {
@@ -33,7 +33,6 @@ double input_value(double *x, double *y, double *z)
     printf("Input x y z: ");
     scanf_s("%lf %lf %lf", x, y, z);
     if (*x == 0 or *y == 0 or *z == 0) {
-        std::cout << "ffffff\n";
         return 1;
     }
     return 0;
